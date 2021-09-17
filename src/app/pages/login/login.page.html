@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Iniciar sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- Aquí comienza el contenido de la pagina -->
+<ion-content>
+  <img src=".\assets\img\inicioDuoc.jpg" />
+  <form>
+    <!-- Primer label para el nombre de usuario -->
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <!-- Segundo label para la contraseña del usuario -->
+    <ion-item lines>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <!-- Botón para poder iniciar sesión -->
+    <ion-row>
+      <ion-col>
+      <ion-button [routerLink]="['/qrreader']" expand="block" color="warning">Ingresa</ion-button>
+        &nbsp;
+        &nbsp;
+         Aquí esta el link que redirecciona a la vista cambiar contraseña -->
+        <center>
+        <a [routerLink]="['/forgot-password']" class="small-text">Cambiar contraseña</a>
+        </center>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
+<!-- Aqui comienza el footer -->
+<ion-footer>
+  <ion-toolbar color="Warning">
+    <ion-title class="ion-text-left ion-text">
+      <center>
+      App desarrollada por The Programers
+      </center>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
+<!-- Aqui termina el footer -->
